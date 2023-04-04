@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --clr-prymary-400: hsl(158, 36%, 37%);
+  --clr-prymary-500: hsl(158, 36%, 20%);
+  --clr-segundary-400: hsl(30, 38%, 92%);
+  --neutral-900: hsl(212, 21%, 14%);
+  --neutral-400: hsl(228, 12%, 48%);
+  --neutral-100: hsl(0, 0%, 100%);
+
+  --ff-accent: "Fraunces", sans-serif;
+  --ff-base: "Montserrat", sans-serif;
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+
+.product {
+  --content-padding: 1.2rem;
+  --content-spacing: 1.5rem;
+  display: grid;
+  background-color: var(--neutral-100);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.product__content {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 0.875rem;
+  background: var(--neutral-100);
+  padding: var(--content-padding);
+  display: grid;
+  gap: var(--content-spacing);
+}
+
+.flex-Group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product__category {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.825rem;
+}
+
+.product__title {
+  font-size: 2rem;
+  font-family: var(--ff-accent);
+  color: var(--neutral-900);
+}
+
+.product_price {
+  font-size: 2rem;
+  font-family: var(--ff-accent);
+  color: var(--clr-prymary-400);
+}
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: var(--clr-prymary-400);
+  color: var(--neutral-100);
+  font-weight: var(--fw-bold);
+  padding: 0.5rem 1.5rem;
+  font-size: 0.925rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.button[data-icon="shopping-card"]::before {
+  content: "";
+  background-image: url("../assets/icon-cart.svg");
+  width: 15px;
+  height: 16px;
+}
+
+.button:is(:hover, :focus) {
+  background-color: var(--clr-prymary-500);
+}
+
+@media (min-width: 600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+  }
+}
