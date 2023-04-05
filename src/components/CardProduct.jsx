@@ -9,8 +9,8 @@ const CardProduct = () => {
       <main>
         <div className="product">
           <picture className="product__img">
-            <img src={imagen} alt="Gabrielle esssmce eau De Parfum<" />
-            <source srcSet={imagen2} media="(min-width:600px)"></source>
+            <source media="(max-width: 640px)" srcSet={imagen2} sizes="640px" />
+            <img src={imagen} alt="image1" />
           </picture>
           <div className="product__content">
             <p className="product__category"> Perfume</p>

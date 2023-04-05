@@ -29,7 +29,8 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: hsl(30, 38%, 92%);
   display: grid;
-  place-content: center;
+  justify-content: center;
+  align-items: center;
   margin: 1rem;
 }
 /*
