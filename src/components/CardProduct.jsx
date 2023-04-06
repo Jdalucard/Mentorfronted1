@@ -1,7 +1,7 @@
-import React from "react";
-import imagen from "../assets/image-product-desktop.jpg";
-import imagen2 from "../assets/image-product-mobile.jpg";
-import "./styles.css";
+import React from 'react'
+import imagen from '../assets/image-product-desktop.jpg'
+import imagen2 from '../assets/image-product-mobile.jpg'
+import './styles.css'
 
 const CardProduct = () => {
   return (
@@ -33,7 +33,7 @@ const CardProduct = () => {
         </div>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default CardProduct;
+export default CardProduct
